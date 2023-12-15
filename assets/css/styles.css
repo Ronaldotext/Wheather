@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../icon/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container__all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content__all {
+  width: 100%;
+}
+.container__input {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: end;
+  height: 40px;
+}
+.container__input > input {
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+}
+.container__input > input:focus {
+  outline: none;
+}
+.container__input > button {
+  border: none;
+  width: 50%;
+  cursor: pointer;
+}
+.container__input > button:focus {
+  outline: none;
+}
+.container__dataInformation {
+  background: rgba(0, 0, 0, 0.1);
+}
+.content__dataInformation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__data-title > p {
+  font-size: 1.1rem;
+  font-family: "Segoe UI";
+  font-weight: bolder;
+}
+.content__data-img-tem {
+  display: flex;
+}
+.content__data-img-tem > p {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.content__dataRight {
+  text-align: right;
+}
+.content__dataRight > p {
+  margin-bottom: 3px;
+}
+.hidden {
+  display: none;
+}
+
+@media (min-width: 781px) {
+  .content__all {
+    width: 43%;
+  }
+}
